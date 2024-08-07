@@ -1,0 +1,100 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* .box{
+    font-size: 2rem;
+    width: 300px;
+    height: 300px;
+    background: red;
+    text-align: center;
+    padding: 32px 64px;
+    border: 5px solid black;
+    margin: 20px;
+    
+}
+
+.box2{
+    width: 75px;
+    height: 75px;
+    background: blue;
+}
+
+.box2{
+    width: 40px;
+    height: 40px;
+    background: green;
+    padding: 4px;
+}
+ */
+.item1,.item2,.item3{
+    height: 150px;
+    width: 150px;
+    background: purple;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+}
+
+ .container{
+    display: flex; /* It position the item in the main axis --> not the cross axix | */
+    /* By difaultl it is horizontal to change it to vertical: */
+    /* flex-direction: column; */ /* Now the main axis is virtocal, and the value row change it to the hirozontal which is the default for the flex */
+    /* Justify-content align items on the main axis */
+    /* justify-content: space-evenly; */ /* flex-start(the default), flex-end,Center, space-between, space-around, space-evently */
+    /* align-items align items along the cross axis */
+    /* align-items: flex-end;  *//* flex-start, flex-end, center, baseline */
+
+/* justify-content aligns tje items on the main axis
+align-items align them on the cross axis
+If we don't define a flex-direction on the contianer than the flex-direction is set to row by default
+ Which means the main axis is set to horizantal by default (Left to Right)
+cross axis is set to the vertical by default (top to bottom)
+we can swirth them by definine flex-direction of column
+
+*/
+
+/* By default flex items will try to fit in one line alot items will make them crash in one line 
+To fix that:
+flex-wrap:wrap ( By default it's set to nowrap )
+align-content only works when we set flex-wrap: wrap
+It let us align everything on the cross axis
+
+ */
+/* flex-wrap: wrap; */
+/* align-content: flex-start; */ /* flex-start, flex-end, center, space-between, space-around, space-enetly */
+/* You can add gaps between items */
+/* gap: 1em; */
+/* The flex propreties we saw belongs inside the container, there are other propreties that belong to the direct children of the container
+flex grow is one of them
+*/
+height: 100vh;
+ }
+
+
+ /* We used this for the baseline value */
+/*  .item1{
+    font-size: 1.5rem;
+    
+ } */
+
+
+ /* We are trying flex proprities on child element*/
+ .item1{
+    /* flex-grow:1;  *//* Takes value, allows the item to grow ifvthere is enough space */
+    /* If all children has the flex-grow:1, they all take the same space */
+    /* flex-shrink: 5; */ /* The item 1 will shrink uch faster 
+    value 0 measn it refuse to shrink*/
+   /*  flex-basis: ; */
+
+   /* the shorthand */
+   /* flex: ;  *//*  */
+   /* align-self: ; it's used to align an indivdual item*/ /* center, flex-start, flex-end, baseline */
+   /* order: */ /* -1 let teh item the first */
+ }
